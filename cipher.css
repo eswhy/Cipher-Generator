@@ -1,9 +1,7 @@
-.roundbutton{
-    /*display:block;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 1px solid red;*/
+body{
+   background-image: url("Images/city.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 #generator{
@@ -12,21 +10,25 @@
 }
 
 #word{
+	color: white;
 	font-family: Saira;
 	font-weight: 750;
-	font-size: 64px;
+	font-size: 84px;
 	margin: auto; 
 	width: 400px;
 	text-align: center;
+	text-shadow: 4px 2px 5px black;
 
 }
 
 #time {
+	color: white;
 	font-family: Saira;
 	font-size: 54px;
 	width: 200px;
 	margin: auto;
 	text-align: center;
+	text-shadow: 4px 2px 5px black;
 }
 
 #cipher-box{
@@ -42,11 +44,13 @@
 
 h1{
 	display: flex; 
-	justify-content: center; 
+	justify-content: row wrap;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	font-style: oblique;
-	font-size: 60px;
+	font-size: 32px;
+	width:200px;
+	outline: solid;
 }
 
 #button-box{
@@ -81,10 +85,11 @@ h1{
 
 .timeButton{
 	font-family: Saira;
-	font-size: 32px;
-	width:90px;
-	height:90px;
+	font-size: 24px;
+	width:60px;
+	height:60px;
 	border-radius:50%;
+	box-shadow: 4px 2px 5px black;
 
 }
 

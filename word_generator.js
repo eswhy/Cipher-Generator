@@ -255,6 +255,8 @@ function newWord(){
   return wordList[indx].toUpperCase(); 
 }
 
+//countdown
+
 
 
 

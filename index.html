@@ -54,7 +54,7 @@ var SC=SC||{};SC.Widget=function(n){function t(r){if(e[r])return e[r].exports;va
 
 
 
-//////GENERATES A NEW WORD FOR EVERY 
+//////GENERATES A NEW WORD 
   function switchWord(){
     if(play){
   	  $("#word").text(newWord());
@@ -83,13 +83,6 @@ let playPause = document.querySelector('#playPause');
   $("#nextBtn").on("click", ()=>{
     $("#word").text(newWord()); ///could be refactored but recursively calling switchword so cannot call that function 
   });
-
-  $("#pauseBtn").on("click", ()=>{
-    play = true; 
-  });
-
-
-
 
 
 /////TIME BUTTON EVENTS - CHANGE INTERVALS BETWEEN WORD CHANGE//////
