@@ -1,0 +1,105 @@
+.roundbutton{
+    /*display:block;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid red;*/
+}
+
+#generator{
+	/*background-color: */
+	justify-content: center;
+}
+
+#word{
+	font-family: Saira;
+	font-weight: 750;
+	font-size: 64px;
+	margin: auto; 
+	width: 400px;
+	text-align: center;
+
+}
+
+#time {
+	font-family: Saira;
+	font-size: 54px;
+	width: 200px;
+	margin: auto;
+	text-align: center;
+}
+
+#cipher-box{
+	display: flex; 
+	flex-direction: column;
+	/*justify-content: center;*/
+	margin: 0 auto;
+	/*flex-flow: wrap; */
+	height: 250px;
+	width: 400px;
+
+}
+
+h1{
+	display: flex; 
+	justify-content: center; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-style: oblique;
+	font-size: 60px;
+}
+
+#button-box{
+	display:flex;
+	justify-content: space-between;
+	height:60px;
+	width: 100px;
+	margin:auto;
+}
+
+#playPause{
+	font-size: 28px
+}
+
+#nextBtn{
+	font-size: 28px
+}
+
+#time-box{
+	display:flex;
+	justify-content: space-between;
+	width: 450px;
+	height: 125px;
+	margin:0 auto;
+}
+
+#sound-box{
+	display:flex;
+	margin: 0 auto;
+	justify-content: center; 
+}
+
+.timeButton{
+	font-family: Saira;
+	font-size: 32px;
+	width:90px;
+	height:90px;
+	border-radius:50%;
+
+}
+
+button:hover {
+	cursor:pointer;
+	background-color:lightgrey;
+}
+
+button:focus {
+	outline: 0;
+	background-color: grey;
+}
+
+i:hover {
+	cursor: pointer;
+
+}
+
