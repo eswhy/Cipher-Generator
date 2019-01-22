@@ -85,24 +85,40 @@ let playPause = document.querySelector('#playPause');
   });
 
 
+
+
+/////////////TIMER/////////////
+function countdown(time){
+  while(time > 0){
+    time--; 
+  }
+} 
+
+
+
 /////TIME BUTTON EVENTS - CHANGE INTERVALS BETWEEN WORD CHANGE//////
   $("#fifteen").on("click", ()=>{
-    value = $("#fifteen").val(); 
+    value = parseInt($("#fifteen").val()); 
+    console.log(value); 
+    $("#time").text(parseInt(value,10)/1000);
     interval = parseInt(value,10); 
   });
 
   $("#thirty").on("click", ()=>{
     value = $("#thirty").val();
+    $("#time").text(parseInt(value,10)/1000)
     interval = parseInt(value,10); 
   });
 
   $("#forty-five").on("click", ()=>{
     value = $("#forty-five").val();
+    $("#time").text(parseInt(value,10)/1000)
     interval = parseInt(value,10); 
   });
 
   $("#sixty").on("click", ()=>{
     value = $("#sixty").val(); 
+    $("#time").text(parseInt(value,10)/1000)
     interval = parseInt(value,10);
   });
 

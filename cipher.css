@@ -62,11 +62,17 @@ h1{
 }
 
 #playPause{
-	font-size: 28px
+	color:white;
+	font-size: 28px;
+	text-shadow: 4px 2px 5px black;
+	
 }
 
 #nextBtn{
-	font-size: 28px
+	color:white;
+	font-size: 28px;
+	text-shadow: 4px 2px 5px black;
+
 }
 
 #time-box{
