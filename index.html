@@ -15,15 +15,15 @@
 
     <h1>Cipher Gen</h1>
 	  <div id="cipher-box">
-	    <p id="word">Word</p>
+	    <p id="word">Cipher?</p>
       <p id="time">30</p> 
     </div>
 
     <div id="time-box">
       <button id="fifteen" class="timeButton" type="submit" value="15000">15</button>
-      <button id ="thirty" class="timeButton" type="submit" value="30000">30</button>
-      <button id="forty-five" class="timeButton" type ="submit" value="45000">45</button>
-      <button id="sixty" class="timeButton" type="submit" value="60000">60</button>
+      <button id ="twenty" class="timeButton" type="submit" value="20000">20</button>
+      <button id="twenty-five" class="timeButton" type ="submit" value="25000">25</button>
+      <button id="thirty" class="timeButton" type="submit" value="30000">30</button>
     </div>
 
     <div id="button-box">
@@ -48,31 +48,27 @@ var SC=SC||{};SC.Widget=function(n){function t(r){if(e[r])return e[r].exports;va
 
   $(document).ready(function(){
 
-  let sCloudPlayer = SC.Widget(sCloud);
-  let interval = 30000; 
+    let sCloudPlayer = SC.Widget(sCloud);
+
+
+///////VARIABLES DESCRIBING CURRENT STATE////////
+  let timeLeft = 30000; 
   let currentTimeSelection = 30000
-  let play = false;
-
-
-
-//////GENERATES A NEW WORD 
-  function switchWord(){
-  	  $("#word").text(newWord());
-  }
+  let hasStarted = false; 
+  let isPlaying = false;
 
 /////////START,PAUSE & NEXT WORD//////////////
 let playPause = document.querySelector('#playPause');
 
   playPause.addEventListener('click', () => {
-    if(play === false){
-      play = true;
+    if(isPlaying === false){
+      isPlaying = true;
       playPause.classList.remove("fa-play");
       playPause.classList.add("fa-pause");
       sCloudPlayer.play();
-      switchWord(); 
       countdown(currentTimeSelection);
     } else {
-      play = false; 
+      isPlaying = false; 
       playPause.classList.remove("fa-pause");
       playPause.classList.add("fa-play");
       sCloudPlayer.pause();
@@ -84,19 +80,24 @@ let playPause = document.querySelector('#playPause');
   });
 
 
-
+//////GENERATES A NEW WORD 
+  function switchWord(){
+      $("#word").text(newWord());
+      hasStarted = true; 
+  }
 
 /////////////TIMER/////////////
-
-
 function countdown(time){
+  if(!hasStarted){
+    switchWord()
+    hasStarted = true; 
+  }
     setTimeout(()=>{
-    let timeLeft = time; 
-    if(!play){
+    if(!isPlaying){
       return; 
     }
     if(timeLeft/1000 < 0){
-      timeLeft = interval; 
+      timeLeft = currentTimeSelection; 
       switchWord()
     }
     $("#time").text(timeLeft/1000);
@@ -108,33 +109,33 @@ function countdown(time){
 
 
 
-/////TIME BUTTON EVENTS - CHANGE INTERVALS BETWEEN WORD CHANGE//////
+/////TIME BUTTON EVENTS - CHANGE TIMELEFT BETWEEN WORD CHANGE//////
   $("#fifteen").on("click", ()=>{
     value = parseInt($("#fifteen").val(),10); 
     $("#time").text(value/1000);
     currentTimeSelection = parseInt(value,10);
-    interval = parseInt(value,10);
+    timeLeft = parseInt(value,10);
+  });
+
+  $("#twenty").on("click", ()=>{
+    value = parseInt($("#twenty").val(),10); 
+    $("#time").text(value/1000);
+    currentTimeSelection = parseInt(value,10); 
+    timeLeft = parseInt(value,10);
+  });
+
+  $("#twenty-five").on("click", ()=>{
+    value = parseInt($("#twenty-five").val(),10); 
+    $("#time").text(value/1000);
+    currentTimeSelection = parseInt(value,10);
+    timeLeft = parseInt(value,10); 
   });
 
   $("#thirty").on("click", ()=>{
     value = parseInt($("#thirty").val(),10); 
     $("#time").text(value/1000);
-    currentTimeSelection = parseInt(value,10); 
-    interval = parseInt(value,10);
-  });
-
-  $("#forty-five").on("click", ()=>{
-    value = parseInt($("#forty-five").val(),10); 
-    $("#time").text(value/1000);
     currentTimeSelection = parseInt(value,10);
-    interval = parseInt(value,10); 
-  });
-
-  $("#sixty").on("click", ()=>{
-    value = parseInt($("#sixty").val(),10); 
-    $("#time").text(value/1000);
-    currentTimeSelection = parseInt(value,10);
-    interval = parseInt(value,10);
+    timeLeft = parseInt(value,10);
   });
 
   //$('.timebutton').on("click")

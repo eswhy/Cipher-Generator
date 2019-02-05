@@ -41,7 +41,7 @@ iframe{
 
 #cipher-box{
 	display: flex; 
-	flex-direction: column;
+	flex-direction:column;
 	/*justify-content: center;*/
 	margin: 0 auto;
 	/*flex-flow: wrap; */
