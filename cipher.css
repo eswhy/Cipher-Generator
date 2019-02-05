@@ -4,6 +4,14 @@ body{
    background-size: cover;
 }
 
+iframe{
+	width: 70%; 
+	height: 100px; 
+	scrolling: yes; 
+	frameborder: yes; 
+	allow: autoplay;
+}
+
 #generator{
 	/*background-color: */
 	justify-content: center;
@@ -87,6 +95,7 @@ h1{
 	display:flex;
 	margin: 0 auto;
 	justify-content: center; 
+	align-items: baseline;
 }
 
 .timeButton{

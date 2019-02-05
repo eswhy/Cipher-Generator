@@ -50,16 +50,14 @@ var SC=SC||{};SC.Widget=function(n){function t(r){if(e[r])return e[r].exports;va
 
   let sCloudPlayer = SC.Widget(sCloud);
   let interval = 30000; 
+  let currentTimeSelection = 30000
   let play = false;
 
 
 
 //////GENERATES A NEW WORD 
   function switchWord(){
-    if(play){
   	  $("#word").text(newWord());
-      setTimeout(switchWord, interval);
-    }
   }
 
 /////////START,PAUSE & NEXT WORD//////////////
@@ -72,7 +70,7 @@ let playPause = document.querySelector('#playPause');
       playPause.classList.add("fa-pause");
       sCloudPlayer.play();
       switchWord(); 
-      countdown(interval)
+      countdown(currentTimeSelection);
     } else {
       play = false; 
       playPause.classList.remove("fa-pause");
@@ -92,19 +90,21 @@ let playPause = document.querySelector('#playPause');
 
 
 function countdown(time){
-  setTimeout(()=>{
-    interval = time; 
+    setTimeout(()=>{
+    let timeLeft = time; 
     if(!play){
       return; 
     }
-    if(time/1000 < 0){
-      time = interval; 
+    if(timeLeft/1000 < 0){
+      timeLeft = interval; 
+      switchWord()
     }
-    $("#time").text(time/1000);
-    time-=1000;
-    countdown(time);
+    $("#time").text(timeLeft/1000);
+    timeLeft-=1000;
+    countdown(timeLeft);
   }, 1000)
 } 
+  
 
 
 
@@ -112,24 +112,28 @@ function countdown(time){
   $("#fifteen").on("click", ()=>{
     value = parseInt($("#fifteen").val(),10); 
     $("#time").text(value/1000);
+    currentTimeSelection = parseInt(value,10);
     interval = parseInt(value,10);
   });
 
   $("#thirty").on("click", ()=>{
     value = parseInt($("#thirty").val(),10); 
     $("#time").text(value/1000);
-    interval = parseInt(value,10); 
+    currentTimeSelection = parseInt(value,10); 
+    interval = parseInt(value,10);
   });
 
   $("#forty-five").on("click", ()=>{
     value = parseInt($("#forty-five").val(),10); 
     $("#time").text(value/1000);
+    currentTimeSelection = parseInt(value,10);
     interval = parseInt(value,10); 
   });
 
   $("#sixty").on("click", ()=>{
     value = parseInt($("#sixty").val(),10); 
     $("#time").text(value/1000);
+    currentTimeSelection = parseInt(value,10);
     interval = parseInt(value,10);
   });
 
