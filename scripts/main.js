@@ -1,4 +1,4 @@
-
+let wordList = basicList;
 let sCloudPlayer = SC.Widget(sCloud);
 ///////VARIABLES DESCRIBING CURRENT STATE////////
 let timeLeft = 30000;
