@@ -50,6 +50,7 @@ h1 {
 	font-size: 32px;
 	width: 200px;
 	outline: solid;
+	background: rgba(248, 148, 148)
 }
 
 #playPause {
