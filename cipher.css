@@ -1,29 +1,27 @@
-body{
-   background-image: url("Images/city.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
+body {
+	background-image: url("Images/city.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-iframe{
-	width: 70%; 
-	height: 100px; 
-	scrolling: yes; 
+iframe {
+	width: 70%;
+	height: 100px;
+	/* scrolling: yes; 
 	frameborder: yes; 
-	allow: autoplay;
+	allow: autoplay; */
 }
-
-#generator{
-	/*background-color: */
-	justify-content: center;
+#topicBtn{
+	font-size:32px;
 }
-
-#word{
+#word {
 	color: white;
 	font-family: Saira;
 	font-weight: 750;
 	font-size: 84px;
-	margin: auto; 
+	margin: auto;
 	width: 400px;
+	height: 300px;
 	text-align: center;
 	text-shadow: 4px 2px 5px black;
 
@@ -34,82 +32,50 @@ iframe{
 	font-family: Saira;
 	font-size: 54px;
 	width: 200px;
-	margin: 25px auto;
+	margin: auto;
 	text-align: center;
 	text-shadow: 4px 2px 5px black;
 }
 
-#cipher-box{
-	display: flex; 
-	flex-direction:column;
-	/*justify-content: center;*/
-	margin: 75px auto;
-	/*flex-flow: wrap; */
-	height: 250px;
-	width: 400px;
 
-}
-
-h1{
-	display: flex; 
+h1 {
+	display: flex;
 	justify-content: row wrap;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	font-style: oblique;
 	font-size: 32px;
-	width:200px;
+	width: 200px;
 	outline: solid;
 }
 
-#button-box{
-	display:flex;
-	justify-content: space-between;
-	height:60px;
-	width: 100px;
-	margin: 25px auto;
-}
-
-#playPause{
-	color:white;
-	font-size: 28px;
-	text-shadow: 4px 2px 5px black;
-	
-}
-
-#nextBtn{
-	color:white;
+#playPause {
+	color: white;
 	font-size: 28px;
 	text-shadow: 4px 2px 5px black;
 
 }
 
-#time-box{
-	display:flex;
-	justify-content: space-between;
-	width: 450px;
-	height: 125px;
-	margin:-25px auto;
+#nextBtn {
+	color: white;
+	font-size: 28px;
+	text-shadow: 4px 2px 5px black;
+
 }
 
-#sound-box{
-	display:flex;
-	margin-top: 100px;
-	justify-content: center; 
-}
-
-.timeButton{
+.timeButton {
 	font-family: Saira;
 	font-size: 24px;
-	width:60px;
-	height:60px;
-	border-radius:50%;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
 	box-shadow: 4px 2px 5px black;
 
 }
 
 button:hover {
-	cursor:pointer;
-	background-color:lightgrey;
+	cursor: pointer;
+	background-color: lightgrey;
 }
 
 button:focus {
@@ -119,6 +85,4 @@ button:focus {
 
 i:hover {
 	cursor: pointer;
-
 }
-
