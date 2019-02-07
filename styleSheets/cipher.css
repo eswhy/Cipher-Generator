@@ -1,7 +1,8 @@
 body {
-	background-image: url("biggie.jpg");
+	background-image: url("Images/biggie.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	
 }
 
 iframe {
@@ -14,9 +15,14 @@ iframe {
 #topicBtn{
 	font-size:32px;
 }
-#word {
+
+.mainText{
 	color: white;
 	font-family: Saira;
+	text-shadow: 4px 2px 5px black;
+}
+
+#word {
 	font-weight: 750;
 	font-size: 84px;
 	margin: auto;
@@ -24,12 +30,9 @@ iframe {
 	height: 300px;
 	text-align: center;
 	text-shadow: 4px 2px 5px black;
-
 }
 
 #time {
-	color: white;
-	font-family: Saira;
 	font-size: 54px;
 	width: 200px;
 	margin: auto;

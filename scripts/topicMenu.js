@@ -3,5 +3,5 @@ let $topic = $("#topics-box");
 
 
 $topicBtn.on("click", () => {
-    $topic.toggle();
+    $topic.toggle("slow");
 })

@@ -5,13 +5,17 @@
 
 #topics-box{
   display: none;
+  /* background: rgb(226, 227, 228, .5); */
   position: absolute;
   font-family: 'Lato', sans-serif;
-  width:200px;
-  margin:-1000
+  width:350px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 28px;
 }
 
 #topics-box li{
+  list-style: none; 
   cursor: pointer;
 }
 
