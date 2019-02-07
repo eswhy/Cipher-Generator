@@ -1,0 +1,44 @@
+#generator {
+  /*background-color: */
+  justify-content: center;
+}
+
+#topics-box{
+  display: none;
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  width:200px;
+  margin:-1000
+}
+
+#cipher-box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /*justify-content: center;*/
+  margin-bottom: 200px;
+  /*flex-flow: wrap; */
+  height: 200px;
+}
+
+#button-box {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100px;
+  margin: 25px auto;
+}
+
+#time-box {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  height: 125px;
+  margin: -25px auto;
+}
+
+#sound-box {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+}
