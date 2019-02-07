@@ -34,7 +34,7 @@ iframe{
 	font-family: Saira;
 	font-size: 54px;
 	width: 200px;
-	margin: auto;
+	margin: 25px auto;
 	text-align: center;
 	text-shadow: 4px 2px 5px black;
 }
@@ -43,7 +43,7 @@ iframe{
 	display: flex; 
 	flex-direction:column;
 	/*justify-content: center;*/
-	margin: 0 auto;
+	margin: 75px auto;
 	/*flex-flow: wrap; */
 	height: 250px;
 	width: 400px;
@@ -66,7 +66,7 @@ h1{
 	justify-content: space-between;
 	height:60px;
 	width: 100px;
-	margin:auto;
+	margin: 25px auto;
 }
 
 #playPause{
@@ -88,14 +88,13 @@ h1{
 	justify-content: space-between;
 	width: 450px;
 	height: 125px;
-	margin:0 auto;
+	margin:-25px auto;
 }
 
 #sound-box{
 	display:flex;
-	margin: 0 auto;
+	margin-top: 100px;
 	justify-content: center; 
-	align-items: baseline;
 }
 
 .timeButton{
