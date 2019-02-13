@@ -21,8 +21,8 @@
 
 <body>
   <h1>Cipher Gen</h1>
-  <i id="topicBtn" class="fa fa-bars" aria-hidden="true"></i>
-  <div id="generator">
+  <div id="controlMenu">
+    <i id="topicBtn" class="fa fa-bars controlBtnClass" aria-hidden="true"></i>
     <div id="topics-box" class="mainText">
       <ul id=#topicsList>
         <li id="basicOption"><i class="fas fa-angle-right"></i><strong> Basic Words</strong></li>
@@ -32,6 +32,11 @@
         <li><i class="fas fa-angle-right"></i><strong> Donkey</strong></li>
       </ul>
     </div>
+    <i id="beatControlBtn" class="fa fa-music controlBtnClass" aria-hidden="true"></i>
+    <i id="backgroundBtn" class="fa fa-camera controlBtnClass" aria-hidden="true"></i>
+  </div>
+  <div id="generator">
+
     <div id="cipher-box">
       <p id="word" class="mainText">Press Play</p>
       <p id="time" class="mainText">30</p>
@@ -57,10 +62,12 @@
       <i class="fas fa-forward" id="nextBtn"></i>
     </div>
 
+    <div id="sound-box">
+      <iframe id="sCloud" width="70%" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/326953704&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </div>
+
   </div>
-  <div id="sound-box">
-    <iframe id="sCloud" width="70%" height="300" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/326953704&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-  </div>
+
 
 </body>
 

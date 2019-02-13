@@ -13,10 +13,24 @@ iframe {
 	frameborder: yes; 
 	allow: autoplay; */
 }
-#topicBtn{
-	font-size:32px;
-	margin-left: 15px; 
+#controlMenu{
+	width: 90px; 
+	display:flex; 
+	flex-direction: column; 
+	background: rgb(255, 255, 255, .5);
+	border-radius: 10px; 
 }
+
+
+.controlBtnClass{
+	width: 40px;
+	font-size:50px;
+	margin-left: 20px; 
+	margin-top: 15px;
+}
+/* #beatControlBtn{
+	
+} */
 
 .mainText{
 	color: white;
