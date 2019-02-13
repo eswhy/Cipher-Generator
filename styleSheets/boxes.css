@@ -1,17 +1,22 @@
 #generator {
   /*background-color: */
+  display:flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top:-160px; 
+  margin: -160px auto;
+  /* background-color: rgba(253, 253, 253, 0.5); */
+  border-radius: 10px;
+  width: 50%; 
   
 }
 
 #topics-box{
   display: none;
-  background: rgba(100, 99, 99, 0.9);
+  background-color: rgba(253, 253, 253, 0.5);
   position: absolute;
   font-family: 'Lato', sans-serif;
   width:350px;
-  margin-left: 80px;
+  margin-left: 100px;
   border-radius: 10px;
   font-size: 28px;
 }
@@ -19,6 +24,7 @@
 #topics-box li{
   list-style: none; 
   cursor: pointer;
+  
 }
 
 #cipher-box {

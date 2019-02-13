@@ -1,9 +1,8 @@
 body {
-	background-image: url("Images/biggie.jpg");
+	background-image: url("Images/kanye.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	margin: 0 auto; 
-	
 }
 
 iframe {
@@ -17,12 +16,12 @@ iframe {
 	width: 90px; 
 	display:flex; 
 	flex-direction: column; 
-	background: rgb(255, 255, 255, .5);
+	background-color: rgba(253, 253, 253, 0.5);
 	border-radius: 10px; 
 }
 
 
-.controlBtnClass{
+.controlBtn{
 	width: 40px;
 	font-size:50px;
 	margin-left: 20px; 
@@ -35,7 +34,7 @@ iframe {
 .mainText{
 	color: white;
 	font-family: Saira;
-	text-shadow: 4px 2px 5px black;
+	text-shadow: 2px 2px 4px black;
 }
 
 #word {

@@ -10,7 +10,7 @@
   <script src="wordBanks/word_generator.js"></script>
   <script src="wordBanks/animals.js"></script>
   <script src="scripts/timeButtons.js"></script>
-  <script src="scripts/topicMenu.js" defer></script>
+  <script src="scripts/controlMenu.js" defer></script>
   <link rel="stylesheet" href="styleSheets/cipher.css" />
   <link rel="stylesheet" href="styleSheets/boxes.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
@@ -22,7 +22,7 @@
 <body>
   <h1>Cipher Gen</h1>
   <div id="controlMenu">
-    <i id="topicBtn" class="fa fa-bars controlBtnClass" aria-hidden="true"></i>
+    <i id="topicBtn" class="fa fa-bars controlBtn" aria-hidden="true"></i>
     <div id="topics-box" class="mainText">
       <ul id=#topicsList>
         <li id="basicOption"><i class="fas fa-angle-right"></i><strong> Basic Words</strong></li>
@@ -32,8 +32,8 @@
         <li><i class="fas fa-angle-right"></i><strong> Donkey</strong></li>
       </ul>
     </div>
-    <i id="beatControlBtn" class="fa fa-music controlBtnClass" aria-hidden="true"></i>
-    <i id="backgroundBtn" class="fa fa-camera controlBtnClass" aria-hidden="true"></i>
+    <i id="beatControlBtn" class="fa fa-music controlBtn" aria-hidden="true"></i>
+    <i id="backgroundBtn" class="fa fa-camera controlBtn" aria-hidden="true"></i>
   </div>
   <div id="generator">
 
@@ -62,10 +62,9 @@
       <i class="fas fa-forward" id="nextBtn"></i>
     </div>
 
-    <div id="sound-box">
-      <iframe id="sCloud" width="70%" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/326953704&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    </div>
-
+  </div>
+  <div id="sound-box">
+    <iframe id="sCloud" width="70%" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/326953704&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
   </div>
 
 

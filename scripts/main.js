@@ -39,3 +39,12 @@ function switchWord() {
     $("#word").text(newWord());
     hasStarted = true;
 }
+
+////BACKGROUND IMAGES ////
+let backgroundImages = ["styleSheets/Images/biggie.jpg",
+    "styleSheets/Images/andersonPaak.jpg",
+    "styleSheets/Images/goldlink.jpg",
+    "styleSheets/Images/kdot.jpg",
+    "styleSheets/Images/kendrick.jpg"];
+
+$("#sound-box").hide(); 

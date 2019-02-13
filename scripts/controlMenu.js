@@ -1,12 +1,13 @@
+
+////TOPICS CONTROL/////
 let $topicBtn = $("#topicBtn");
-let $topic = $("#topics-box");
+let $topicsList = $("#topics-box");
 let $basic = $("#basicOption");
 let $actorsActress = $("#actorsActressOption");
 let $animals = $("#animalsOption")
 
-
 $topicBtn.on("click", () => {
-    $topic.toggle("explode");
+    $topicsList.toggle("explode");
 });
 $basic.on("click", () => {
     wordList = basicList;
@@ -19,4 +20,12 @@ $actorsActress.on("click", () => {
 $animals.on("click", () => {
     wordList = animalList;
     switchWord();
+})
+
+
+/////BACKGROUND CONTROL////
+let $backgroundButton = $("#backgroundBtn");
+$backgroundButton.on("click", () => {
+    let backgroundIndx = Math.floor(Math.random() * backgroundImages.length);
+    $("body").css("background-image", 'url(' + backgroundImages[backgroundIndx] + ')');
 })
