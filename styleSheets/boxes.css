@@ -1,11 +1,12 @@
 #generator {
   /*background-color: */
   justify-content: center;
+  
 }
 
 #topics-box{
   display: none;
-  /* background: rgb(226, 227, 228, .5); */
+  background: rgba(100, 99, 99, 0.9);
   position: absolute;
   font-family: 'Lato', sans-serif;
   width:350px;
@@ -24,9 +25,9 @@
   flex-direction: column;
   align-content: center;
   /*justify-content: center;*/
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   /*flex-flow: wrap; */
-  height: 200px;
+  height: 300px;
 }
 
 #button-box {
@@ -47,6 +48,6 @@
 
 #sound-box {
   display: flex;
-  margin-top: 80px;
+  align-items: baseline;
   justify-content: center;
 }
