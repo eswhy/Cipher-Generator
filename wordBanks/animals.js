@@ -1,0 +1,11 @@
+let animalList = ["Cat", "Bird", "Dog", "Bear",
+    "Lion", "Tiger", "Reptile", "Wolf", "Fish",
+    "Monkey", "Horse", "Human", "Snakes", "Whales",
+    "Elephant", "Deer", "Dolphin", "Fox", "Insect",
+    "Rodent", "Leopard", "Frog", "Rabbit", "Amphibians",
+    "Squirrel", "Turtle", "Cattle", "Bat", "Otter",
+    "Lizard", "Crocodile", "Cougar", "Rat", "Sheep",
+    "Rhinoceros", "Eagle", "Giant panda", "Raccoon",
+    "Tortoise", "Goat", "Pig", "Coyote", "Lynxes",
+    "Shark", "Chicken", "Killer whale", "Polar bear",
+    "Moose", "Jaguar", "Penguin"]
