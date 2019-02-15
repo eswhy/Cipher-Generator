@@ -44,7 +44,5 @@ function switchWord() {
 let backgroundImages = ["styleSheets/Images/biggie.jpg",
     "styleSheets/Images/andersonPaak.jpg",
     "styleSheets/Images/goldlink.jpg",
-    "styleSheets/Images/kdot.jpg",
-    "styleSheets/Images/kendrick.jpg"];
-
-$("#sound-box").hide(); 
+    "styleSheets/Images/kendrick.jpg",
+    "styleSheets/Images/kanye.jpg"];

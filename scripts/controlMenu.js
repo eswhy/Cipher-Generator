@@ -27,5 +27,9 @@ $animals.on("click", () => {
 let $backgroundButton = $("#backgroundBtn");
 $backgroundButton.on("click", () => {
     let backgroundIndx = Math.floor(Math.random() * backgroundImages.length);
-    $("body").css("background-image", 'url(' + backgroundImages[backgroundIndx] + ')');
+    let changeBackground = function () {
+        $("body").css("background-image", 'url(' + backgroundImages[backgroundIndx] + ')');
+    }
+    changeBackground();
+
 })
