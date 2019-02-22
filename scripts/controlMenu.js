@@ -4,7 +4,7 @@ let $topicBtn = $("#topicBtn");
 let $topicsList = $("#topics-box");
 let $basic = $("#basicOption");
 let $actorsActress = $("#actorsActressOption");
-let $animals = $("#animalsOption")
+let $animals = $("#animalsOption");
 
 $topicBtn.on("click", () => {
     $topicsList.toggle("explode");
@@ -20,14 +20,17 @@ $actorsActress.on("click", () => {
 $animals.on("click", () => {
     wordList = animalList;
     switchWord();
-})
+});
 
 
 ///BEAT CONTROL////
 let $beatButton = $("#beatControlBtn");
-let $musicControl = $("#musicBox")
-let $playPauseMusic = $("#playMusic")
+let $musicControl = $("#musicBox");
+let $playPauseMusic = $("#playMusic");
+let $nextBeat = $("#nextBeat");
+let $prevBeat = $("#prevBeat");
 let isPlaying = false;
+
 $beatButton.on("click", () => {
     $musicControl.toggle("explode");
 });
@@ -43,6 +46,12 @@ $playPauseMusic.click(() => {
         $playPauseMusic.addClass("fa-play")
         sCloudPlayer.pause();
     }
+});
+$nextBeat.click(() => {
+    sCloudPlayer.next();
+})
+$prevBeat.click(() => {
+    sCloudPlayer.prev();
 })
 
 
