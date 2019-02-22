@@ -6,12 +6,11 @@ body {
 }
 
 iframe {
-	height: 100px;
-	width:100%;
-	/* scrolling: yes; 
-	frameborder: yes; 
-	allow: autoplay; */
+	width:99%;
+	height:400px; 
 }
+
+
 #controlMenu{
 	width: 90px; 
 	display:flex; 
@@ -38,9 +37,6 @@ iframe {
 	margin-left: 20px; 
 	margin-top: 15px;
 }
-/* #beatControlBtn{
-	
-} */
 
 .mainText{
 	color: white;
