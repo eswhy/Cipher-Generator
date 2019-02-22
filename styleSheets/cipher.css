@@ -6,8 +6,8 @@ body {
 }
 
 iframe {
-	width: 70%;
 	height: 100px;
+	width:100%;
 	/* scrolling: yes; 
 	frameborder: yes; 
 	allow: autoplay; */
@@ -18,6 +18,17 @@ iframe {
 	flex-direction: column; 
 	background-color: rgba(253, 253, 253, 0.5);
 	border-radius: 10px; 
+}
+
+.controlMenu{
+  display: none;
+  background-color: rgba(253, 253, 253, 0.5);
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  width:350px;
+  margin-left: 100px;
+  border-radius: 10px;
+  font-size: 28px;
 }
 
 
