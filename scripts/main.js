@@ -4,8 +4,6 @@ let sCloudPlayer = SC.Widget(sCloud);
 let timeLeft = 30000;
 let currentTimeSelection = 30000;
 let hasStarted = false;
-let isPlaying = false;
-
 /////////START,PAUSE & NEXT WORD//////////////
 let playPause = document.querySelector("#playPause");
 
@@ -14,12 +12,16 @@ playPause.addEventListener("click", () => {
         isPlaying = true;
         playPause.classList.remove("fa-play");
         playPause.classList.add("fa-pause");
+        $playPauseMusic.removeClass("fa-play");
+        $playPauseMusic.addClass("fa-pause")
         sCloudPlayer.play();
         countdown(currentTimeSelection);
     } else {
         isPlaying = false;
         playPause.classList.remove("fa-pause");
         playPause.classList.add("fa-play");
+        $playPauseMusic.removeClass("fa-pause");
+        $playPauseMusic.addClass("fa-play")
         sCloudPlayer.pause();
     }
 });

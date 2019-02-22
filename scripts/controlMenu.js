@@ -26,9 +26,24 @@ $animals.on("click", () => {
 ///BEAT CONTROL////
 let $beatButton = $("#beatControlBtn");
 let $musicControl = $("#musicBox")
+let $playPauseMusic = $("#playMusic")
+let isPlaying = false;
 $beatButton.on("click", () => {
     $musicControl.toggle("explode");
 });
+$playPauseMusic.click(() => {
+    if (isPlaying === false) {
+        isPlaying = true;
+        $playPauseMusic.removeClass("fa-play");
+        $playPauseMusic.addClass("fa-pause")
+        sCloudPlayer.play();
+    } else {
+        isPlaying = false;
+        $playPauseMusic.removeClass("fa-pause");
+        $playPauseMusic.addClass("fa-play")
+        sCloudPlayer.pause();
+    }
+})
 
 
 /////BACKGROUND CONTROL////
