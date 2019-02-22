@@ -46,3 +46,5 @@ let backgroundImages = ["styleSheets/Images/biggie.jpg",
     "styleSheets/Images/goldlink.jpg",
     "styleSheets/Images/kendrick.jpg",
     "styleSheets/Images/kanye.jpg"];
+
+// $("#musicBox").hide(); 

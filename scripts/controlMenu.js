@@ -23,6 +23,14 @@ $animals.on("click", () => {
 })
 
 
+///BEAT CONTROL////
+let $beatButton = $("#beatControlBtn");
+let $musicControl = $("#musicBox")
+$beatButton.on("click", () => {
+    $musicControl.toggle("explode");
+});
+
+
 /////BACKGROUND CONTROL////
 let $backgroundButton = $("#backgroundBtn");
 $backgroundButton.on("click", () => {
