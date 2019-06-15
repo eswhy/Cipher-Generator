@@ -32,18 +32,22 @@ let $prevBeat = $("#prevBeat");
 let isPlaying = false;
 
 $beatButton.on("click", () => {
-    $musicControl.toggle("explode");
+    $musicControl.toggle();
 });
 $playPauseMusic.click(() => {
     if (isPlaying === false) {
         isPlaying = true;
         $playPauseMusic.removeClass("fa-play");
-        $playPauseMusic.addClass("fa-pause")
+        $playPauseMusic.addClass("fa-pause");
+        playPause.classList.remove("fa-microphone-alt");
+        playPause.classList.add("fa-pause");
         sCloudPlayer.play();
     } else {
         isPlaying = false;
         $playPauseMusic.removeClass("fa-pause");
         $playPauseMusic.addClass("fa-play")
+        playPause.classList.remove("fa-pause");
+        playPause.classList.add("fa-microphone-alt");
         sCloudPlayer.pause();
     }
 });
@@ -63,5 +67,7 @@ $backgroundButton.on("click", () => {
         $("body").css("background-image", 'url(' + backgroundImages[backgroundIndx] + ')');
     }
     changeBackground();
-
 })
+
+
+/////C

@@ -10,7 +10,7 @@ let playPause = document.querySelector("#playPause");
 playPause.addEventListener("click", () => {
     if (isPlaying === false) {
         isPlaying = true;
-        playPause.classList.remove("fa-play");
+        playPause.classList.remove("fa-microphone-alt");
         playPause.classList.add("fa-pause");
         $playPauseMusic.removeClass("fa-play");
         $playPauseMusic.addClass("fa-pause")
@@ -19,7 +19,7 @@ playPause.addEventListener("click", () => {
     } else {
         isPlaying = false;
         playPause.classList.remove("fa-pause");
-        playPause.classList.add("fa-play");
+        playPause.classList.add("fa-microphone-alt");
         $playPauseMusic.removeClass("fa-pause");
         $playPauseMusic.addClass("fa-play")
         sCloudPlayer.pause();

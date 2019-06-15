@@ -20,14 +20,15 @@ iframe {
 }
 
 .controlMenu{
-  display: none;
-  background-color: rgba(253, 253, 253, 0.5);
+  display: none; 
+  background-color: rgba(248, 148, 148);
   position: absolute;
   font-family: 'Lato', sans-serif;
   width:350px;
   margin-left: 100px;
   border-radius: 10px;
   font-size: 28px;
+  box-shadow: 2px 2px 3px black; 
 }
 
 
@@ -61,7 +62,7 @@ iframe {
 }
 
 #time {
-	font-size: 54px;
+	font-size: 72px;
 	width: 200px;
 	margin: auto;
 	text-align: center;
@@ -70,31 +71,28 @@ iframe {
 
 
 h1 {
-	display: flex;
+	color:white; 
+	background: rgba(248, 148, 148);
+	border: solid;
+	border-color:black;
 	margin-left:10px;
-	justify-content: row wrap;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	font-style: oblique;
-	font-size: 32px;
+	font-size: 36px;
 	width: 200px;
-	outline: solid;
-	background: rgba(248, 148, 148)
+	text-shadow: 2px 2px 3px black;
 }
 
-#playPause {
-	color: white;
-	font-size: 28px;
-	text-shadow: 4px 2px 5px black;
 
+
+/* #start{
+	width: 200px; 
 }
+#skip{
+	width: 250px; 
 
-#nextBtn {
-	color: white;
-	font-size: 28px;
-	text-shadow: 4px 2px 5px black;
-
-}
+} */
 
 .timeButton {
 	font-family: Saira;

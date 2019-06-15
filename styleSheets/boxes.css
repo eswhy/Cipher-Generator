@@ -1,12 +1,11 @@
 #generator {
-  /*background-color: */
   display:flex;
   flex-direction: column;
   justify-content: center;
-  margin: -160px auto;
-  /* background-color: rgba(253, 253, 253, 0.5); */
+  margin: -180px auto;
   border-radius: 10px;
-  width: 50%; 
+  width: 90%; 
+  /* background-color: rgba(253, 253, 253, 0.5); */
 }
 
 #topics-box li{
@@ -23,12 +22,25 @@
   height: 300px;
 }
 
-#button-box {
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
-  width: 100px;
-  margin: 25px auto;
+#button-box{
+  display:flex; 
+  flex-direction: row; 
+  justify-content: space-evenly; 
+  margin: auto;
+  width: 100%;
+}
+
+#buttonsList {
+  display:flex; 
+  flex-direction: row; 
+  justify-content: space-evenly; 
+  list-style: none;
+  margin:0 auto;
+  width:30%;
+	color: white;
+	font-size: 64px;
+  text-shadow: 4px 2px 5px black;
+  padding: 0; 
 }
 
 #time-box {
@@ -36,12 +48,12 @@
   justify-content: space-between;
   width: 450px;
   height: 125px;
-  margin: -25px auto;
+  margin: -5px auto;
 }
 
 #musicBox {
   margin-top:6%;
-  width: 45%;
+  width: 50%;
 }
 
 #musicControls{
