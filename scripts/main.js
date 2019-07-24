@@ -9,12 +9,12 @@ let playPause = document.querySelector("#playPause");
 
 playPause.addEventListener("click", () => {
     if (isPlaying === false) {
-        isPlaying = true;
         playPause.classList.remove("fa-microphone-alt");
         playPause.classList.add("fa-pause");
         $playPauseMusic.removeClass("fa-play");
         $playPauseMusic.addClass("fa-pause")
         sCloudPlayer.play();
+        isPlaying = true;
         countdown(currentTimeSelection);
     } else {
         isPlaying = false;

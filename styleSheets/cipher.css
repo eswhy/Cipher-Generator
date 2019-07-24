@@ -5,11 +5,6 @@ body {
 	margin: 0 auto; 
 }
 
-iframe {
-	width:99%;
-	height:400px; 
-}
-
 
 #controlMenu{
 	width: 90px; 
@@ -20,7 +15,7 @@ iframe {
 }
 
 .controlMenu{
-  display: none; 
+  display:none;
   background-color: rgba(248, 148, 148);
   position: absolute;
   font-family: 'Lato', sans-serif;

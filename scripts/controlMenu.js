@@ -32,7 +32,7 @@ let $prevBeat = $("#prevBeat");
 let isPlaying = false;
 
 $beatButton.on("click", () => {
-    $musicControl.toggle();
+    $musicControl.toggle("explode");
 });
 $playPauseMusic.click(() => {
     if (isPlaying === false) {
